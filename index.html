@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Sahira's Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4231346c72.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="top-container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="">Sahira Sheikh</a>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Introduction">Introduction</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Median">Median</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Quartiles">Quartiles</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Demerits">Demerits</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Code">Python Code</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Introduction to Median</h1>
+
+    </div>
+    <div class="middle-container">
+        <div class="skills" id="Introduction">
+            <h2>Introduction to median</h2>
+            <div class="skill-row">
+                <p class="web-description">
+                    Median is the middle value of the dataset which is a better descriptive than the mean because it is a positional value.
+                </p>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <div class="skill-row" id = "Median">
+        <h2> Finding median of different types of data series</h2>
+        <p>
+            <h3>Individual Series:</h3>
+            <p class="web-description"> 
+                For finding the median of individual series, you need to sort all the elements in the data series <br>
+                Formula for median of individual series is given by<br>
+                If the number of terms in the series is odd<br>
+                <img src="https://i.ibb.co/cC8PhSv/median-individual-odd.jpg" alt="median-individual-odd" border="0"><br>
+                If the number of terms in the series is even<br>
+                <img src="https://i.ibb.co/RzGLdy8/median-individual-even.jpg" alt="median-individual-even" border="0"><br>
+                Where n is the number of terms in the series<br>
+                </p>
+            <h3>Discrete Series</h3>
+            <p class="web-description">
+                NOTE: ALWAYS USE (n+1)/2<sup>th</sup> term irrespective of n being odd or even. Here n is the number of terms in the series<br>
+                For finding the median of discrete series, make a new column in the data series called cumulative frequency and in that column, write the cumulative total of the frequency after each observation in the discrete series <br>
+                Then find the value of (n+1)/2, if the value of cumulative frequency above the particular row is less than (n+1)/2 and the value of the cumulative frequency is more than (n+1)/2 for a column below that row, then the value of x in that row becomes the median<br>
+
+            </p>
+            <h3>Continous Series</h3>
+            <p class="web-description">
+                NOTE: ALWAYS USE (n/2)<sup>th</sup> term irrespective of n being odd or even. Here n is the number of terms in the series<br>
+                For finding the median of continuous series, make a new column in the data series called cumulative frequency and in that column, write the cumulative total of the frequency after each observation in the continuous series<br>
+                Then find the value of (n/2), if the value of cumulative frequency above the particular row is less than (n/2) and the value of the cumulative frequency is more than (n/2) for a column below that row, then the value of class interval in that row becomes the our concerned class<br>
+                The median for continuous series is given by the formula:<br>
+                <img src="https://i.ibb.co/PxGgyFr/median-continuous.jpg" alt="median-continuous" border="0"><br>
+                Where:<br>
+                <ul> 
+                    <li>L is the lower bound of the concerned class</li>
+                    <li>(n/2) is the half of the total number of observations in that continuous series</li>
+                    <li>cf<sup>above</sup> is the cumulative frequency of the class above the concerned class</li>
+                    <li>f<sub>corresponding</sub> is the frequency of the concerned class</li>
+                    <li>i is the class interval of that continuous series</li>
+                </ul> 
+             </p>
+    </div>
+    <hr>
+    <div class="skill-row" id = "Quartiles">
+        <h2>Quartiles</h2>
+        <p class="web-description">
+            Quartiles are the observations that divide the data series into 4 parts<br>
+            <h2> For Discrete Series </h2>
+            <h3> First Quartile</h3>
+            <p class="web-description">
+                First quartile is the observation such that all the observations below it are contained in the first 25% or the first quarter of the discrete data series <br>
+                The formula for first quartile can be given by<br>
+                <img src="https://i.ibb.co/5XDtVLM/q1-discrete.jpg" alt="q1-discrete" border="0"><br>
+                For finding the (n+1)/4<sup>th</sup> term, first calculate the value of (n+1)/4, then if the cumulative frequency above a particular row is less than (n+1)/4 and the value of cumulative frequency below that row is more than (n+1)/4 then the value of x corresponding to that row becomes the first quartile 
+            </p>
+            <h3> Second Quartile</h3>
+            <p class="web-description">
+                Second quartile is the observation such that all the observations below it are contained in the first 50% or the first quarter of the discrete data series<br>
+                The second quartile is same as the median because median is also the middle value of the data series and any value below the median is contained in the first 50% or first half of discrete the data series<br>
+            </p>
+            <h3> Third Quartile</h3>
+            <p class="web-description">
+                Third quartile is the observation such that all the observations below it are contained in the first 75% of the discrete data series<br>
+                The formula for third quartile can be given by:<br>
+                <img src="https://i.ibb.co/bRvS8YL/q3-discrete.jpg" alt="q3-discrete" border="0"><br>
+                For finding the (3n+1)/4<sup>th</sup> term, first calculate the value of (3n+1)/4, then if the cumulative frequency above a particular row is less than (3n+1)/4 and the value of cumulative frequency below that row is more than (3n+1)/4 then the value of x corresponding to that row becomes the third quartile 
+            </p>
+            <h2> For Continuous Series</h2>
+            <h3> First Quartile</h3>
+            <p class="web-description">
+                First quartile is the observation such that all the observations below it are contained in the first 25% or the first quarter of the continuous data series<br>
+                The formula for first quartile for continuous series is given by<br>
+                <img src="https://i.ibb.co/H2RVYj7/q1-continuous.jpg" alt="q1-continuous" border="0">
+            </p>
+            <h3> Second Quartile</h3>
+            <p class="web-description">
+                Second quartile is the observation such that all the observations below it are contained in the first 50% or the first quarter of the continuous data series<br>
+                The second quartile is same as the median because median is also the middle value of the data series and any value below the median is contained in the first 50% or first half of continuous the data series<br>
+            </p>
+            <h3> Third Quartile</h3>
+            <p class="web-description">
+                Third quartile is the observation such that all the observations below it are contained in the first 75% of the discrete data series<br>
+                The formula for third quartile of continuous series is given by<br>
+                <img src="https://i.ibb.co/6H5Z6c2/q3-continuous.jpg" alt="q3-continuous" border="0">
+            </p>
+            <p class="web-description">
+                Where: 
+                <ul>
+                    <li>L is the lower bound of the concerned class </li>
+                    <li>(n/4) is the one fourth and (3n/4) is three fourths of the total number of observations in that continuous series</li>
+                    <li>cf<sup>above</sup> is the cumulative frequency of the class above the concerned class</li>
+                    <li>f<sub>corresponding</sub> is the frequency of the concerned class</li>
+                    <li>i is the class interval of that continuous series</li>
+                </ul>
+                In general for any discrete series, a fraction (k/n) can be given by the observation in the row for which the value of cumulative frequency above that row is less than (k/n) and the value of cumulative frequency below that row is less than (k/n)<br>
+                And any fraction (k/n) for a continuous series can be given by<br>
+                <img src="https://i.ibb.co/sQq22Pr/frac-continuous.jpg" alt="frac-continuous" border="0"><br>
+                Where:
+                <ul>
+                    <li>L is the lower bound of the concerned class </li>
+                    <li>(k/n) is any fraction of the total number of observations in that continuous series</li>
+                    <li>cf<sup>above</sup> is the cumulative frequency of the class above the concerned class</li>
+                    <li>f<sub>corresponding</sub> is the frequency of the concerned class</li>
+                    <li>i is the class interval of that continuous series</li>
+                </ul>
+                <h3> Inter Quartile Range</h3>
+                <p class = "web-description">This is the interval that contains the middle 50% of the observations and it is given by Q3-Q1</p>
+                <h3>Outliers</h3>
+                <p class="web-description">
+                    These are the values that are at the extreme upper or the extreme lower end of the data series and they affect our analysis<br>
+                    Lower outlier: anything below Q1 – 1.5*IQR<br>
+                    Upper outlier: anything above Q3 + 1.5*IQR<br>
+                </p>
+            </p>
+    </div>
+    <div class="skill-row" id = "Demerits">
+        <h2>Demerits of median</h2>
+        <p class="web-description">
+            Here are the demerits of using median as a descriptive statistic for calculations<br>
+            <ol>
+                <li>We can’t find combined median </li>
+                <li>Median is not considering the values, it considers the position and not the values. Hence it is used for qualitative analysis (where we do not pay much attention to the value of the data points) </li>
+                <li>We have different methods to calculate median so median can be different for different methods but mean is same </li>
+                <li>Can’t be calculated for NA values</li>
+            </ol>
+        </p>
+        <p class="web-description">
+            Median is a good descriptive statistic to replace the missing values with it in QUALITATIVE datasets
+        </p>
+    </div>
+    <div class="skill-row" id = "Code">
+        <h2>Python code for finding median</h2>
+        <script src="https://gist.github.com/sheikh-sahira1703/fe4df799f862411d5c5d2b10e19b1f34.js"></script>
+    </div>
+    </div>
+
+    <hr>
+    <div class="contact-me" id="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Contact Me</h3>
+        <p class="contact">You can contact me via the button given below. Feel free to contact me. Suggestions and corrections are welcomed warmly by me.</p>
+        <a class="btn btn-dark" href="mailto:shiekh_sahira1703@hotmail.com">CONTACT ME</a>
+    </div>
+    <div class="bottom-container">
+        <div class="social-media">
+            <a class="footer-link" href="https://instagram.com/sahira_speaks?igshid=712oqk2r0kfe"><i class="fab fa-instagram"></i>
+                My Instagram profile
+            </a>
+            <a class="footer-link" href="https://github.com/sheikh-sahira1703"><i class="fab fa-github"></i>
+                GitHub Profile
+            </a>
+            <br>
+            <i class="fas fa-map-pin copyright"></i>
+            <p class="copyright">Mumbai, MH</p>
+        </div>
+
+
+
+        <p class="copyright">© Sahira Sheikh.</p>
+    </div>
+</body>
+
+</html>
+
